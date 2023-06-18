@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { Steps, Panel, Placeholder, ButtonGroup, Button } from "rsuite";
 import SupplyZain from "../Project one/SupplyZain";
 import BaslineData from "../BaslineData/BaslineData";
+import SalseForce from "../SalseFoces/SalseForce";
+
 
 const Rounting = () => {
   const [step, setStep] = React.useState(0);
@@ -43,7 +45,7 @@ const Rounting = () => {
             onBaselineCompleted={onBaselineCompleted}
           ></BaslineData>
         ) : step === 2 ? (
-          <>sale force cast</>
+          <><SalseForce/></>
         ) : step === 3 ? (
           <>close</>
         ) : (
